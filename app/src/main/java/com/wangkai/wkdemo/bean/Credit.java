@@ -6,7 +6,8 @@ import com.j256.ormlite.table.DatabaseTable;
 
 @DatabaseTable(tableName = "credit_t")
 public class Credit {
-
+    @DatabaseField(generatedId = true)
+    private int id;
     @DatabaseField(width = 20, unique = true, canBeNull = false)
     private String creditCard;
     @DatabaseField(width = 20)
@@ -16,7 +17,24 @@ public class Credit {
     @DatabaseField(width = 20)
     private String creditAccountsCard;
 
+    public Credit() {
+    }
 
+    public Credit(int id, String creditCard, String creditCardPasswordT, String getCreditCardPasswordQ, String creditAccountsCard) {
+        this.id = id;
+        this.creditCard = creditCard;
+        this.creditCardPasswordT = creditCardPasswordT;
+        this.getCreditCardPasswordQ = getCreditCardPasswordQ;
+        this.creditAccountsCard = creditAccountsCard;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getCreditCard() {
         return creditCard;
@@ -50,6 +68,14 @@ public class Credit {
         this.creditAccountsCard = creditAccountsCard;
     }
 
-
-
-}  
+    @Override
+    public String toString() {
+        return "Credit{" +
+                "id=" + id +
+                ", creditCard='" + creditCard + '\'' +
+                ", creditCardPasswordT='" + creditCardPasswordT + '\'' +
+                ", getCreditCardPasswordQ='" + getCreditCardPasswordQ + '\'' +
+                ", creditAccountsCard='" + creditAccountsCard + '\'' +
+                '}';
+    }
+}
