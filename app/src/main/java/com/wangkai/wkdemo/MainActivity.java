@@ -2,25 +2,18 @@ package com.wangkai.wkdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import com.j256.ormlite.android.apptools.OrmLiteBaseActivity;
 import com.wangkai.wkdemo.bean.Credit;
 import com.wangkai.wkdemo.bean.User;
 import com.wangkai.wkdemo.dao.CreditDao;
 import com.wangkai.wkdemo.dao.UserDao;
-import com.wangkai.wkdemo.db.AppDbHelper;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.wangkai.wkdemo.R.id.lv_list;
 
 
 public class MainActivity extends Activity {
@@ -32,19 +25,27 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addBtn = findViewById(R.id.btn_add);\
+        addBtn = findViewById(R.id.btn_add);
         deleteBtn = findViewById(R.id.btn_delete);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                addUser();
             }
         });
 
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                UserDao userDao = new UserDao(MainActivity.this);
+                List<User> users = userDao.getUsers();
+                List<String> list = new ArrayList<>();
+                for (int i = 0; i < users.size(); i++) {
+                    list.add(users.get(i).toString());
+                }
 
+                ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, android.R.id.text1, list);
+                listView.setAdapter(adapter);
             }
         });
 

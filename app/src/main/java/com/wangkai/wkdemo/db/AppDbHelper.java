@@ -66,7 +66,11 @@ public class AppDbHelper extends OrmLiteSqliteOpenHelper {
         if (null == userDao) {
             synchronized (User.class) {
                 if (null == userDao) {
-                    userDao = getDao(User.class);
+                    try {
+                        userDao = getDao(User.class);
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

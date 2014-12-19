@@ -59,10 +59,17 @@ public class UserDao {
     }
 
     public List<User> getUsers() {
+
+        List<User> users = null;
         try {
-            return userDao.queryForAll();
+            users = userDao.queryForAll();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+        return users;
+
     }
+
+
 }
