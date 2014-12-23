@@ -25,15 +25,24 @@ public class MainActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        initViews();
+
+    }
+
+
+
+    public void initViews() {
         addBtn = findViewById(R.id.btn_add);
         deleteBtn = findViewById(R.id.btn_delete);
+        listView = (ListView) findViewById(R.id.lv_list);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addUser();
             }
         });
-
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,19 +53,10 @@ public class MainActivity extends Activity {
                     list.add(users.get(i).toString());
                 }
 
-                ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, android.R.id.text1, list);
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, android.R.id.text1, list);
                 listView.setAdapter(adapter);
             }
         });
-
-        initViews();
-
-    }
-
-
-
-    public void initViews() {
-
 
     }
 

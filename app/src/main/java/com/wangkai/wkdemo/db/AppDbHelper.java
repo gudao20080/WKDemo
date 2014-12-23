@@ -11,6 +11,8 @@ import com.wangkai.wkdemo.bean.Credit;
 import com.wangkai.wkdemo.bean.User;
 
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * User: WangKai(123940232@qq.com)
@@ -22,6 +24,7 @@ public class AppDbHelper extends OrmLiteSqliteOpenHelper {
     private static String databaseName = "wkDemo_db";
     private static int databaseVersion = 1;
     private static AppDbHelper instance;
+    private Map<String, Dao> daos = new HashMap<>();
 
     public AppDbHelper(Context context) {
         super(context, databaseName, null, databaseVersion);
@@ -90,7 +93,18 @@ public class AppDbHelper extends OrmLiteSqliteOpenHelper {
         return instance;
     }
 
+    public synchronized Dao getDao(Class clazz) throws SQLException {
+        Dao dao;
+        String name = clazz.getSimpleName();
 
+        if (daos.containsKey(name)) {
+            dao = daos.get(name);
+        }else {
+            dao = getDao(clazz);
+            daos.put(name, dao);
+        }
+        return dao;
+    }
 
 
 
