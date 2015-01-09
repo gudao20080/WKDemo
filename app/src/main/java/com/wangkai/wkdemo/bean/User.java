@@ -7,7 +7,7 @@ import com.j256.ormlite.table.DatabaseTable;
  * User: WangKai(123940232@qq.com)
  * 2014-12-19 15:49
  */
-@DatabaseTable(tableName = "tb_user")
+@DatabaseTable(tableName = "tb_user")       //如果不指定表名，则默认用类名做为表名
 public class User {
     @DatabaseField(generatedId = true)
     private int id;
@@ -16,6 +16,7 @@ public class User {
     @DatabaseField(columnName = "desc")
     private  String desc;
 
+    //必须要有一个空的构造函数
     public User() {
     }
 

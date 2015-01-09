@@ -22,6 +22,7 @@ public class UserDao {
     public UserDao(Context context) {
 
         helper = AppDbHelper.getAppDbHelper(context);
+
         userDao = helper.getUserDao();
     }
 
@@ -58,6 +59,14 @@ public class UserDao {
         }
     }
 
+    public void update(User user) {
+        try {
+            userDao.update(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public List<User> getUsers() {
 
         List<User> users = null;
@@ -71,5 +80,9 @@ public class UserDao {
 
     }
 
+
+    public void releaseHelper() {
+
+    }
 
 }

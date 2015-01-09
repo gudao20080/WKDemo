@@ -3,6 +3,7 @@ package com.wangkai.wkdemo.db;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;
@@ -93,6 +94,12 @@ public class AppDbHelper extends OrmLiteSqliteOpenHelper {
         return instance;
     }
 
+    /**
+     * 获取某个表的Dao
+     * @param clazz
+     * @return
+     * @throws SQLException
+     */
     public synchronized Dao getDao(Class clazz) throws SQLException {
         Dao dao;
         String name = clazz.getSimpleName();
@@ -107,6 +114,9 @@ public class AppDbHelper extends OrmLiteSqliteOpenHelper {
     }
 
 
+    public void releaseHelper() {
 
+        OpenHelperManager.releaseHelper();
+    }
 
 }
