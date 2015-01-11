@@ -70,5 +70,7 @@ public class MaskFilterView extends View {
 
         // 画一个矩形
         canvas.drawRect(left, top, right, bottom, mPaint);
+
+
     }
 }
