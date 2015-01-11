@@ -1,1 +1,1 @@
-include ':CustomViewT', ':Android常用工具类', ':app', ':CostomCountDown', ':ListViewPropertyTest', ':CarSelect'
+include ':CostomCountDown', ':ListViewPropertyTest', ':CarSelect', ':Android常用工具类', ':CustomViewT', ':app'
