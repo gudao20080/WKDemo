@@ -14,8 +14,11 @@
             <option value="$PROJECT_DIR$/CostomCountDown" />
             <option value="$PROJECT_DIR$/CustomViewT" />
             <option value="$PROJECT_DIR$/ListViewPropertyTest" />
+            <option value="$PROJECT_DIR$/aa" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/recylerviewtest" />
+
+            <option value="$PROJECT_DIR$/vvcancle" />
+
           </set>
         </option>
       </GradleProjectSettings>
