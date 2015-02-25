@@ -58,6 +58,19 @@ public class MainActivity extends Activity {
             }
         });
 
+<<<<<<< Updated upstream
+=======
+
+        initViews();
+
+    }
+
+
+
+    public void initViews() {
+
+
+>>>>>>> Stashed changes
     }
 
     public void addCredit() {

@@ -3,18 +3,23 @@ package com.wk.customview.view;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.LightingColorFilter;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
+<<<<<<< Updated upstream
 import android.nfc.Tag;
 import android.text.Layout;
 import android.text.StaticLayout;
+=======
+>>>>>>> Stashed changes
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -60,6 +65,7 @@ public class CustomView extends View implements Runnable{
 //        float widthInPx = DensityUtil.getWidthInPx(context);
 //        canvas.drawCircle(widthInPx/2, widthInPx/2, radius, mPaint);
         canvas.drawBitmap(bitmap, x, y, mPaint);
+<<<<<<< Updated upstream
         mStaticLayout = new StaticLayout(text, mTextPaint, canvas.getWidth()/2, Layout.Alignment.ALIGN_NORMAL, 1.0F, 0.0F, false);
         mStaticLayout.draw(canvas);
         canvas.restore();
@@ -69,6 +75,14 @@ public class CustomView extends View implements Runnable{
         Paint.FontMetrics fontMetrics = mTextPaint.getFontMetrics();
         float metrics = mTextPaint.getFontMetrics(fontMetrics);
         Log.d(TAG, "metrics: " + metrics);
+=======
+        TextPaint textPaint = new TextPaint();
+//        textPaint.setTy
+//        Bitmap.createBitmap()
+
+        Matrix matrix = new Matrix();
+//        matrix.setScale();
+>>>>>>> Stashed changes
     }
 
 
