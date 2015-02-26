@@ -20,9 +20,18 @@ android {
 
 
 
+    signingConfigs{
+        myConfig {
+            storeFile file("dd.keystore")
+
+        }
+    }
+
 
 
 }
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

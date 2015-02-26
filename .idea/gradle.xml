@@ -14,8 +14,8 @@
             <option value="$PROJECT_DIR$/CostomCountDown" />
             <option value="$PROJECT_DIR$/CustomViewT" />
             <option value="$PROJECT_DIR$/ListViewPropertyTest" />
-            <option value="$PROJECT_DIR$/aa" />
             <option value="$PROJECT_DIR$/app" />
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
             <option value="$PROJECT_DIR$/vvcancle" />
@@ -24,6 +24,8 @@
             <option value="$PROJECT_DIR$/multipackagedemo" />
             <option value="$PROJECT_DIR$/wechatdemao" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> modify in company
           </set>
         </option>
       </GradleProjectSettings>

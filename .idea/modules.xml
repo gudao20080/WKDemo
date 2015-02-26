@@ -8,8 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/aa/aa.iml" filepath="$PROJECT_DIR$/aa/aa.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 
       <module fileurl="file://$PROJECT_DIR$/vvcancle/vvcancle.iml" filepath="$PROJECT_DIR$/vvcancle/vvcancle.iml" />
@@ -18,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/wechatdemao/wechatdemao.iml" filepath="$PROJECT_DIR$/wechatdemao/wechatdemao.iml" />
 >>>>>>> Stashed changes
+=======
+>>>>>>> modify in company
     </modules>
   </component>
 </project>
