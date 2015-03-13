@@ -58,20 +58,12 @@ public class MainActivity extends Activity {
             }
         });
 
-<<<<<<< Updated upstream
-=======
 
         initViews();
 
     }
 
 
-
-    public void initViews() {
-
-
->>>>>>> Stashed changes
-    }
 
     public void addCredit() {
         Credit credit = new Credit(1, "a", "b", "c", "d");

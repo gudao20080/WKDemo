@@ -1,11 +1,16 @@
 package com.wk.customview;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.wk.customview.view.RoundImageDrawable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,30 +22,45 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swiprefresh);
+//        setContentView(R.layout.activity_swiprefresh);
 
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipRefreshLayout);
-        swipeRefreshLayout.setColorSchemeColors(Color.RED, Color.BLUE, Color.GREEN);
-        swipeRefreshLayout.setDistanceToTriggerSync(60);
-        swipeRefreshLayout.setProgressBackgroundColor(R.color.aaa);
-        swipeRefreshLayout.setSize(0);
-        listView = (ListView) findViewById(R.id.listView);
+        setContentView(R.layout.a);
+        View view = findViewById(R.id.roundView);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.b);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
-                android.R.id.text1, getData());
-        listView.setAdapter(adapter);
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
-                swipeRefreshLayout.setRefreshing(false);
-            }
-        });
+        RoundImageDrawable drawable = new RoundImageDrawable(bitmap);
+        view.setBackgroundDrawable(drawable);
+
+
+//        view.setBackgroundDrawable(new RoundImageDrawable());
+//        view.setBackgroundDrawable(new RoundImageDrawable(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher)));
+
+
+
+//        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipRefreshLayout);
+//        swipeRefreshLayout.setColorSchemeColors(Color.RED, Color.BLUE, Color.GREEN);
+//        swipeRefreshLayout.setDistanceToTriggerSync(60);
+//        swipeRefreshLayout.setProgressBackgroundColor(R.color.aaa);
+//        swipeRefreshLayout.setSize(0);
+//        listView = (ListView) findViewById(R.id.listView);
+//
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+//                android.R.id.text1, getData());
+//        listView.setAdapter(adapter);
+//        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                try {
+//                    Thread.sleep(2000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//
+//                swipeRefreshLayout.setRefreshing(false);
+//            }
+//        });
+
     }
 
     public List<String> getData() {

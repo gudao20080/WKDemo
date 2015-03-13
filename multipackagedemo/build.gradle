@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'Multipackage'
+            keyAlias 'multipackagedemo'
             keyPassword '123456'
-            storeFile file('C:/Users/Administrator/Downloads/multipackage.jks')
+            storeFile file('C:/Users/WangKai/Documents/multipackagedemo.jks')
             storePassword '123456'
         }
     }
@@ -30,7 +30,7 @@ android {
                     def outputFile = output.outputFile
                     if (outputFile != null && outputFile.name.endsWith('.apk')) {
                         // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
-                        def fileName = "boohee_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        def fileName = "VV_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
                         output.outputFile = new File(outputFile.parent, fileName)
                     }
                 }
@@ -44,26 +44,26 @@ android {
         }
     }
     productFlavors {
-//        xiaomi {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
-//        }
-//        _360 {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
-//        }
-//        baidu {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
-//        }
-//        wandoujia {
-//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
-//        }
-        xiaomi {}
-        _360 {}
-        baidu {}
-        wandoujia {}
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        wandoujia {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+        }
+//        xiaomi {}
+//        _360 {}
+//        baidu {}
+//        wandoujia {}
     }
-    productFlavors.all {
-        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
-    }
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
 }
 
 dependencies {
