@@ -63,7 +63,6 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         return super.onTouchEvent(event);
-        Log.d(TAG, )
     }
 
     @Override
