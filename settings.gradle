@@ -1,3 +1,3 @@
-include ':app', ':CustomViewT', ':Android常用工具类', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':vvcancle', ':aa', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest'
+include ':app', ':CustomViewT', ':Android常用工具类', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':aa', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest'
 project(':library').projectDir = new File('PagerSlidingTabStrip/library')
 project(':sample').projectDir = new File('PagerSlidingTabStrip/sample')
