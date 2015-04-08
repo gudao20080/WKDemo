@@ -1,4 +1,4 @@
-include ':app', ':CustomViewT', ':Android常用工具类', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':aa', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest', ':test'
+include ':app', ':CustomViewT', ':Android常用工具类', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':aa', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest', ':test', ':frescodeom'
 project(':library').projectDir = new File('PagerSlidingTabStrip/library')
 project(':sample').projectDir = new File('PagerSlidingTabStrip/sample')
 //include ':app', ':CustomViewT', ':Android常用工具类', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':aa'
