@@ -4,6 +4,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.os.Parcel;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -19,6 +23,20 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
     private SwipeRefreshLayout swipeRefreshLayout;
     private  ListView listView;
+    private Handler handler = new Handler(new Handler.Callback() {
+        @Override
+        public boolean handleMessage(Message msg) {
+
+            switch (msg.what) {
+
+
+            }
+
+
+
+            return false;
+        }
+    });
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,6 +78,34 @@ public class MainActivity extends ActionBarActivity {
 //                swipeRefreshLayout.setRefreshing(false);
 //            }
 //        });
+       /* setContentView(R.layout.activity_swiprefresh);
+
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipRefreshLayout);
+        swipeRefreshLayout.setColorSchemeColors(Color.RED, Color.BLUE, Color.GREEN);
+        swipeRefreshLayout.setDistanceToTriggerSync(60);
+        swipeRefreshLayout.setProgressBackgroundColor(R.color.aaa);
+        swipeRefreshLayout.setSize(0);
+        listView = (ListView) findViewById(R.id.listView);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+                android.R.id.text1, getData());
+        listView.setAdapter(adapter);
+//        swipeRefreshLayout.setRefreshing(true);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeRefreshLayout.setRefreshing(true);
+                try {
+                    Thread.sleep(5000);
+                    swipeRefreshLayout.setRefreshing(false);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
+*/
 
     }
 

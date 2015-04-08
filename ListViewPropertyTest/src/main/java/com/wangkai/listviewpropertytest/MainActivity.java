@@ -34,6 +34,9 @@ public class MainActivity extends ActionBarActivity {
                 adapter.notifyDataSetChanged();
             }
         });
+
+        View view = new View(this);
+        view.isLaidOut();
     }
 
 

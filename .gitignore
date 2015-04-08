@@ -4,7 +4,7 @@
 /.idea/libraries
 .DS_Store
 /build
-*.iml
+
 gradle.xml
 modules.xml
 
@@ -15,7 +15,11 @@ modules.xml
 
 # Files for the Dalvik VM
 *.dex
+<<<<<<< 7179930a4ae8fea918d8d61ff63dbe060f6da373
 
+=======
+*.iml
+>>>>>>> 8e9d731849996dcd77b0652133f3971f678a9c52
 # Java class files
 *.class
 
@@ -36,8 +40,6 @@ proguard/
 
 # Log Files
 *.log
-
-
 
 # Ignore Gradle GUI config
 gradle-app.setting

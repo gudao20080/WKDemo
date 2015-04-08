@@ -3,9 +3,9 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         config {
-            keyAlias 'multipackagedemo'
+            keyAlias 'multipackageddemo'
             keyPassword '123456'
-            storeFile file('C:/Users/WangKai/Documents/multipackagedemo.jks')
+            storeFile file('C:/Users/Administrator/Downloads/multipackageddemo.jks')
             storePassword '123456'
         }
     }
@@ -24,7 +24,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
             applicationVariants.all { variant ->
                 variant.outputs.each { output ->
                     def outputFile = output.outputFile
@@ -41,6 +40,7 @@ android {
             jniDebuggable false
             shrinkResources false
             signingConfig signingConfigs.config
+            zipAlignEnabled true
         }
     }
     productFlavors {
@@ -60,10 +60,23 @@ android {
 //        _360 {}
 //        baidu {}
 //        wandoujia {}
+//        xiaomi {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+//        }
+//        _360 {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+//        }
+//        baidu {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+//        }
+//        wandoujia {
+//            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandoujia"]
+//        }
     }
-//    productFlavors.all {
-//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
-//    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
 }
 
 dependencies {

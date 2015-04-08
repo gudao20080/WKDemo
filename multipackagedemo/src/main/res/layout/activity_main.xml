@@ -5,11 +5,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_show_channel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="@string/hello_world"
-
+        android:background="#ff0033"
         android:textSize="50sp" />
 
 </RelativeLayout>
