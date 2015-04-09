@@ -1,4 +1,4 @@
-package com.wkr.myapplication.utils;
+package com.wkr.myapplication.android_utils;
 
 import android.content.Context;
 

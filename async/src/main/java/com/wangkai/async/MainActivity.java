@@ -1,14 +1,17 @@
 package com.wangkai.async;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.FileAsyncHttpResponseHandler;
 
 import org.apache.http.Header;
+
+import java.io.File;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,7 +33,26 @@ public class MainActivity extends ActionBarActivity {
 
             }
 
+            @Override
+            public void onStart() {
+                super.onStart();
+            }
 
+
+        });
+//
+//        RequestParams params = new RequestParams("a", "b");
+//        params.put
+        client.get("", new FileAsyncHttpResponseHandler(this) {
+            @Override
+            public void onFailure(int i, Header[] headers, Throwable throwable, File file) {
+
+            }
+
+            @Override
+            public void onSuccess(int i, Header[] headers, File file) {
+
+            }
         });
 
     }
