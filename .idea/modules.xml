@@ -9,18 +9,16 @@
       <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-
-      <module fileurl="file://$PROJECT_DIR$/vvcancle/vvcancle.iml" filepath="$PROJECT_DIR$/vvcancle/vvcancle.iml" />
-
-=======
+      <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingTabStrip/library/library.iml" filepath="$PROJECT_DIR$/PagerSlidingTabStrip/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" filepath="$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingTabStrip/sample/sample.iml" filepath="$PROJECT_DIR$/PagerSlidingTabStrip/sample/sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" filepath="$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/wechatdemao/wechatdemao.iml" filepath="$PROJECT_DIR$/wechatdemao/wechatdemao.iml" />
->>>>>>> Stashed changes
-=======
->>>>>>> modify in company
     </modules>
   </component>
 </project>
-
