@@ -20,6 +20,4 @@ public class MainActivity extends Activity {
         SimpleDraweeView draweeView = (SimpleDraweeView) findViewById(R.id.my_image_view);
         draweeView.setImageURI(uri);
     }
-
-
 }
