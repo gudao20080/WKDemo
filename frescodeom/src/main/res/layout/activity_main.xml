@@ -10,6 +10,10 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         fresco:placeholderImage="@mipmap/ic_launcher"
-        android:scaleType="fitXY"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        fresco:roundingBorderWidth="2dp"
+        fresco:roundingBorderColor="#ff0000"
         />
 </LinearLayout>
