@@ -104,7 +104,6 @@ public class MainActivity extends Activity {
 
     public void add(User user) {
         userDao.insert(user);
-
 //        resultTv.setText(user.toString());
         query();
     }

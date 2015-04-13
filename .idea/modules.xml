@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrmliteTest/app.iml" filepath="$PROJECT_DIR$/OrmliteTest/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
       <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />

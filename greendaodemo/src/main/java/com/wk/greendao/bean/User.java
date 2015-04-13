@@ -25,6 +25,12 @@ public class User {
         this.id = id;
     }
 
+    public User(String sessionId, String name, String age) {
+        this.sessionId = sessionId;
+        this.name = name;
+        this.age = age;
+    }
+
     public String getSessionId() {
         return sessionId;
     }
