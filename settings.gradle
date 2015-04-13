@@ -1,3 +1,3 @@
-include ':app', ':CustomViewT', ':Androidå¸¸ç”¨å·¥å…·ç±»', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest', ':test', ':async', ':frescodeom', ':bombdemo', ':greendaodemo'
+include ':app', ':CustomViewT', ':Android³£ÓÃ¹¤¾ßÀà', ':wechatdemao', ':multipackagedemo', ':CarSelect', ':CostomCountDown', ':ListViewPropertyTest', ':toucheventdemo', ':library', ':sample', ':pagertabstriptest', ':test', ':async', ':frescodeom', ':bombdemo', ':greendaodemo', ':OrmliteTest'
 project(':library').projectDir = new File('PagerSlidingTabStrip/library')
 project(':sample').projectDir = new File('PagerSlidingTabStrip/sample')
