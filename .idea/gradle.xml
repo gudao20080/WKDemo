@@ -10,24 +10,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Android���ù�����" />
-            <option value="$PROJECT_DIR$/CarSelect" />
-            <option value="$PROJECT_DIR$/CostomCountDown" />
-            <option value="$PROJECT_DIR$/CustomViewT" />
-            <option value="$PROJECT_DIR$/ListViewPropertyTest" />
             <option value="$PROJECT_DIR$/OrmliteTest" />
-            <option value="$PROJECT_DIR$/PagerSlidingTabStrip/library" />
-            <option value="$PROJECT_DIR$/PagerSlidingTabStrip/sample" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/async" />
-            <option value="$PROJECT_DIR$/bombdemo" />
-            <option value="$PROJECT_DIR$/frescodeom" />
             <option value="$PROJECT_DIR$/greendaodemo" />
-            <option value="$PROJECT_DIR$/multipackagedemo" />
-            <option value="$PROJECT_DIR$/pagertabstriptest" />
-            <option value="$PROJECT_DIR$/test" />
-            <option value="$PROJECT_DIR$/toucheventdemo" />
-            <option value="$PROJECT_DIR$/wechatdemao" />
           </set>
         </option>
       </GradleProjectSettings>
