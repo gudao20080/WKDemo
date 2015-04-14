@@ -1,1 +1,1 @@
-include ':greendaodemo', ':OrmliteTest'
+include ':greendaodemo', ':OrmliteTest', ':CarSelect', ':CostomCountDown', ':CustomViewT', ':frescodeom', ':ListViewPropertyTest', ':multipackagedemo', ':pagertabstriptest', ':test', ':toucheventdemo'
