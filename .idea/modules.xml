@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android���ù�����/Android���ù�����.iml" filepath="$PROJECT_DIR$/Android���ù�����/Android���ù�����.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarSelect/CarSelect.iml" filepath="$PROJECT_DIR$/CarSelect/CarSelect.iml" />
       <module fileurl="file://$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" filepath="$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" filepath="$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageopent/imageopent.iml" filepath="$PROJECT_DIR$/imageopent/imageopent.iml" />
       <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" filepath="$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
@@ -20,3 +18,4 @@
     </modules>
   </component>
 </project>
+

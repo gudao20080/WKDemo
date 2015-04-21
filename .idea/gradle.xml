@@ -6,7 +6,6 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1" />
-        <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -17,6 +16,7 @@
             <option value="$PROJECT_DIR$/OrmliteTest" />
             <option value="$PROJECT_DIR$/frescodeom" />
             <option value="$PROJECT_DIR$/greendaodemo" />
+            <option value="$PROJECT_DIR$/imageopent" />
             <option value="$PROJECT_DIR$/multipackagedemo" />
             <option value="$PROJECT_DIR$/pagertabstriptest" />
             <option value="$PROJECT_DIR$/test" />
@@ -27,3 +27,4 @@
     </option>
   </component>
 </project>
+
