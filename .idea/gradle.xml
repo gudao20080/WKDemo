@@ -6,14 +6,18 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.2.1" />
+        <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Android常用工具类" />
             <option value="$PROJECT_DIR$/CarSelect" />
             <option value="$PROJECT_DIR$/CostomCountDown" />
             <option value="$PROJECT_DIR$/CustomViewT" />
             <option value="$PROJECT_DIR$/ListViewPropertyTest" />
             <option value="$PROJECT_DIR$/OrmliteTest" />
+            <option value="$PROJECT_DIR$/async" />
+            <option value="$PROJECT_DIR$/bombdemo" />
             <option value="$PROJECT_DIR$/frescodeom" />
             <option value="$PROJECT_DIR$/greendaodemo" />
             <option value="$PROJECT_DIR$/imageopent" />
@@ -21,10 +25,10 @@
             <option value="$PROJECT_DIR$/pagertabstriptest" />
             <option value="$PROJECT_DIR$/test" />
             <option value="$PROJECT_DIR$/toucheventdemo" />
+            <option value="$PROJECT_DIR$/vvpinchedemo" />
           </set>
         </option>
       </GradleProjectSettings>
     </option>
   </component>
 </project>
-

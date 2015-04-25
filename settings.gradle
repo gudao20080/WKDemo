@@ -1,1 +1,1 @@
-include ':greendaodemo', ':OrmliteTest', ':CarSelect', ':CostomCountDown', ':CustomViewT', ':frescodeom', ':ListViewPropertyTest', ':multipackagedemo', ':pagertabstriptest', ':test', ':toucheventdemo', ':imageopent'
+include ':greendaodemo', ':vvpinchedemo', ':toucheventdemo', ':test', ':pagertabstriptest', ':OrmliteTest', ':multipackagedemo', ':ListViewPropertyTest', ':imageopent', ':frescodeom', ':CustomViewT', ':CostomCountDown', ':CarSelect', ':bombdemo', ':async', ':Android常用工具类'
