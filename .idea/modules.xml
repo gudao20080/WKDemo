@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android常用工具类/Android常用工具类.iml" filepath="$PROJECT_DIR$/Android常用工具类/Android常用工具类.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Android���ù�����/Android���ù�����.iml" filepath="$PROJECT_DIR$/Android���ù�����/Android���ù�����.iml" />
       <module fileurl="file://$PROJECT_DIR$/CarSelect/CarSelect.iml" filepath="$PROJECT_DIR$/CarSelect/CarSelect.iml" />
       <module fileurl="file://$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" filepath="$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
@@ -13,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
       <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageopent/imageopent.iml" filepath="$PROJECT_DIR$/imageopent/imageopent.iml" />
       <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
