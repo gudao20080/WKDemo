@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" filepath="$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitmaptest/bitmaptest.iml" filepath="$PROJECT_DIR$/bitmaptest/bitmaptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
