@@ -35,6 +35,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
 
+
     public Bitmap handImage(Bitmap bitmap) {
         Bitmap newBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(newBitmap);
