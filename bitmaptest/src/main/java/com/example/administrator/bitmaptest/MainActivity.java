@@ -8,7 +8,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener{
-    private Button mRoundedBitmapBtn, mColorMatrixBtn;
+    private Button mRoundedBitmapBtn, mColorMatrixBtn, mTransitionDrawableBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +21,12 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     public void initViews() {
         mRoundedBitmapBtn = (Button) findViewById(R.id.btn_rounded_bitmap);
         mColorMatrixBtn = (Button) findViewById(R.id.btn_colorMatrix);
+        mTransitionDrawableBtn = (Button) findViewById(R.id.btn_transitionDrawable);
 
         mRoundedBitmapBtn.setOnClickListener(this);
         mColorMatrixBtn.setOnClickListener(this);
+        mTransitionDrawableBtn.setOnClickListener(this);
+
 
     }
 
@@ -37,6 +40,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case R.id.btn_colorMatrix:
                 startActivity(new Intent(this, ColorMatrixActivity.class));
                 break;
+
+            case R.id.btn_transitionDrawable:
+                startActivity(new Intent(this, DrawableActivity.class));
+                break;
+
 
             default:
 
