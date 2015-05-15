@@ -5,19 +5,24 @@
                 android:orientation="vertical"
                 tools:context=".MainActivity">
 
-   <ImageView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:src="@mipmap/ic_launcher"
-       />
-
-
-    <ImageView
-        android:id="@+id/iv_newImage"
+    <Button
+        android:id="@+id/btn_rounded_bitmap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
+        android:text="圆形或圆角图片"
+        android:textSize="14sp"
         />
+
+    <Button
+        android:id="@+id/btn_colorMatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ColorMatrix"
+        android:textSize="14sp"
+        />
+
+
+
 
     <com.example.administrator.bitmaptest.BitmapShaderView
         android:layout_width="300dp"

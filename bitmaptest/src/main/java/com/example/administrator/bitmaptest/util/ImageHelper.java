@@ -1,4 +1,4 @@
-package com.example.administrator.bitmaptest;
+package com.example.administrator.bitmaptest.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
