@@ -1,23 +1,24 @@
 package com.wangkai.test;
 
 import android.app.Activity;
-import android.graphics.ColorMatrix;
-import android.graphics.ColorMatrixColorFilter;
-import android.graphics.Matrix;
-import android.graphics.Paint;
+import android.app.Fragment;
+import android.content.Intent;
+import android.graphics.Rect;
 import android.os.Bundle;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.View;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
     private final String TAG = "MainActivity";
-
+    private android.os.Handler mHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mHandler = new android.os.Handler();
 //        ColorMatrix colorMatrix = new ColorMatrix();
 //        colorMatrix.setRotate(0, 1);
 //        colorMatrix.setSaturation(100);
@@ -31,8 +32,42 @@ public class MainActivity extends Activity {
 //        matrix.setScale(2,2);
 //        matrix.setSkew(10, 10);
 
+        findViewById(R.id.btn_a).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BActivity.class);
+                startActivityForResult(intent, 100);
+//                mHandler.postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        finishActivity(100);
+//                    }
+//                }, 2000);
+            }
+        });
 
+        findViewById(R.id.btn_b).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        ViewPager viewPager = new ViewPager(this);
+        viewPager.getGlobalVisibleRect(new Rect());
+        View v = new View(this);
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("TAG", "onActivityResult: " + requestCode + ", " + resultCode);
+    }
 
+    @Override
+    public void onActivityReenter(int resultCode, Intent data) {
+        Log.d("TAG", "onActivityReenter: " +  resultCode);
+        super.onActivityReenter(resultCode, data);
+
+    }
 }
