@@ -1,6 +1,7 @@
 package com.wangkai.test;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -36,13 +37,14 @@ public class MainActivity extends FragmentActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BActivity.class);
-                startActivityForResult(intent, 100);
+//                startActivityForResult(intent, 100);
 //                mHandler.postDelayed(new Runnable() {
 //                    @Override
 //                    public void run() {
 //                        finishActivity(100);
 //                    }
 //                }, 2000);
+                startActivity(intent);
             }
         });
 
@@ -56,6 +58,10 @@ public class MainActivity extends FragmentActivity {
         ViewPager viewPager = new ViewPager(this);
         viewPager.getGlobalVisibleRect(new Rect());
         View v = new View(this);
+
+        ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        int memoryClass = activityManager.getMemoryClass();
+        Log.d("TAG", "memoryClass: " + memoryClass);
     }
 
     @Override
