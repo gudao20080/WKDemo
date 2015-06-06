@@ -34,8 +34,8 @@
         <ListView
             android:id="@+id/left_drawer"
             android:layout_width="320dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
             android:background="#111"
             android:choiceMode="singleChoice"
             android:divider="@android:color/holo_red_dark"

@@ -1,6 +1,8 @@
 package com.wk.drawerlayoutdemo;
 
 import android.graphics.Color;
+import android.support.annotation.NonNull;
+import android.support.annotation.StringRes;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawerTitle = mTitle = getTitle();
         mPlanetTitles = getResources().getStringArray(R.array.planets_array);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
-//        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, Gravity.RIGHT);
+        mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, Gravity.RIGHT);
 
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mPlanetTitles));
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -75,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.closeDrawers();
             }
         });
+    }
+
+    public void setInt(@StringRes int a) {
 
     }
 
