@@ -1,18 +1,17 @@
 package com.wangkai.test;
 
-import android.app.Activity;
 import android.app.ActivityManager;
-import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
     private android.os.Handler mHandler;
     @Override
@@ -54,28 +53,15 @@ public class MainActivity extends FragmentActivity {
 
             }
         });
-
+        Toolbar toolbar = new Toolbar(this);
         ViewPager viewPager = new ViewPager(this);
         viewPager.getGlobalVisibleRect(new Rect());
         View v = new View(this);
-
         ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         int memoryClass = activityManager.getMemoryClass();
         Log.d("TAG", "memoryClass: " + memoryClass);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d("TAG", "onActivityResult: " + requestCode + ", " + resultCode);
-    }
-
-    @Override
-    public void onActivityReenter(int resultCode, Intent data) {
-        Log.d("TAG", "onActivityReenter: " +  resultCode);
-        super.onActivityReenter(resultCode, data);
-
-    }
 
 
 }
