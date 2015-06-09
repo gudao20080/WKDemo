@@ -1,25 +1,57 @@
 package com.wk.materialnewfeaturedemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.SpannableString;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
-    private Button mShowSnackBarBtn;
-    private CoordinatorLayout mCoordinatorLayout;
+    private Button mShowSnackBarBtn, mTabLayout;
+    private LinearLayout mLyaout;
+    private TextInputLayout mTextInputLayout;
+    private FloatingActionButton mFab, mFab_b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mCoordinatorLayout = (CoordinatorLayout) findViewById(R.id.cl);
+        mLyaout = (LinearLayout) findViewById(R.id.cl);
+        mTextInputLayout = (TextInputLayout) findViewById(R.id.til);
         mShowSnackBarBtn = (Button) findViewById(R.id.btn_show_snack_bar);
+        mFab = (FloatingActionButton) findViewById(R.id.fab);
+        mFab_b = (FloatingActionButton) findViewById(R.id.fab_b);
+        mTabLayout = (Button) findViewById(R.id.btn_tabLayout);
+
+        initSnackbar();
+        initTextInputLayout();
+        initFloatActionButton();
+        initTabLayout();
+
+    }
+
+    private void initTabLayout() {
+        mTabLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TabLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void initSnackbar() {
         mShowSnackBarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,18 +62,59 @@ public class MainActivity extends AppCompatActivity {
 //
 //                        }
 //                    }).show();
+                View contentView = findViewById(android.R.id.content);
 
-                Snackbar snackbar = Snackbar.make(mCoordinatorLayout, "Demo", Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(contentView, "Demo", Snackbar.LENGTH_LONG);
                 Snackbar.SnackbarLayout snackbarView = (Snackbar.SnackbarLayout) snackbar.getView();
                 snackbarView.setBackgroundColor(Color.RED);
 //                snackbarView.getActionView()
                 Class<? extends Snackbar.SnackbarLayout> snackbarViewClass = snackbarView.getClass();
 
                 snackbar.show();
+            }
+        });
+    }
+
+
+
+    public void initTextInputLayout() {
+
+        mTextInputLayout.setHint("password");
+        SpannableString msp = new SpannableString("password");
+//        msp.setSpan(new BackgroundColorSpan(Color.BLUE), 1, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);  //设置背景色为青色
+//        mTextInputLayout.setHint(msp);
+        EditText editText = mTextInputLayout.getEditText();
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
 
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if(s.length() > 6){
+                    mTextInputLayout.setErrorEnabled(false);
+
+                }else {
+                    mTextInputLayout.setError("输入长度错误");
+                    mTextInputLayout.setErrorEnabled(true);
+
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
         });
+
+
+    }
+
+    public void initFloatActionButton() {
+        mFab.setRippleColor(Color.RED);         //设置FloatActionButton底部颜色
+        mFab_b.setRippleColor(Color.BLUE);
     }
 
 
