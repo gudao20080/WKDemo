@@ -22,13 +22,18 @@ public class MainActivity extends AppCompatActivity {
         mShowSnackBarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(mCoordinatorLayout, "示例 snackbar", Snackbar.LENGTH_LONG)
-                    .setAction("点击", new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
+//                Snackbar.make(mCoordinatorLayout, "示例 snackbar", Snackbar.LENGTH_LONG)
+//                    .setAction("点击", new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//
+//                        }
+//                    }).show();
 
-                        }
-                    }).show();
+                Snackbar snackbar = Snackbar.make(mCoordinatorLayout, "Demo", Snackbar.LENGTH_LONG);
+                Snackbar.SnackbarLayout snackbarView = (Snackbar.SnackbarLayout) snackbar.getView();
+                snackbar.show();
+
             }
 
         });
