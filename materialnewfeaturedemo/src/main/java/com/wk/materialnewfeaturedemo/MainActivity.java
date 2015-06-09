@@ -1,5 +1,6 @@
 package com.wk.materialnewfeaturedemo;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
                 Snackbar snackbar = Snackbar.make(mCoordinatorLayout, "Demo", Snackbar.LENGTH_LONG);
                 Snackbar.SnackbarLayout snackbarView = (Snackbar.SnackbarLayout) snackbar.getView();
+                snackbarView.setBackgroundColor(Color.RED);
+//                snackbarView.getActionView()
+                Class<? extends Snackbar.SnackbarLayout> snackbarViewClass = snackbarView.getClass();
+
                 snackbar.show();
 
             }
