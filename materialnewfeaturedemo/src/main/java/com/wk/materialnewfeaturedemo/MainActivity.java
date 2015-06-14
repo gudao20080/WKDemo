@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         mFab = (FloatingActionButton) findViewById(R.id.fab);
         mFab_b = (FloatingActionButton) findViewById(R.id.fab_b);
         mTabLayout = (Button) findViewById(R.id.btn_tabLayout);
-
         initSnackbar();
         initTextInputLayout();
         initFloatActionButton();

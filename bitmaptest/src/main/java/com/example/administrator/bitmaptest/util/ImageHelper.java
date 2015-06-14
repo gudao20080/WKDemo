@@ -40,7 +40,7 @@ public class ImageHelper {
         return bmp;
     }
 
-    /*µ×Æ¬*/
+    /*åº•ç‰‡*/
     public static Bitmap handleImageNegative(Bitmap bm) {
         int width = bm.getWidth();
         int height = bm.getHeight();
@@ -86,7 +86,7 @@ public class ImageHelper {
         return bmp;
     }
 
-    /*ÀÏÕÕÆ¬*/
+    /*è€ç…§ç‰‡*/
     public static Bitmap handleImagePixelsOldPhoto(Bitmap bm) {
         Bitmap bmp = Bitmap.createBitmap(bm.getWidth(), bm.getHeight(),
                 Bitmap.Config.ARGB_8888);
@@ -126,7 +126,7 @@ public class ImageHelper {
         return bmp;
     }
 
-    /*¸¡µñĞ§¹û*/
+    /*æµ®é›•æ•ˆæœ*/
     public static Bitmap handleImagePixelsRelief(Bitmap bm) {
         Bitmap bmp = Bitmap.createBitmap(bm.getWidth(), bm.getHeight(),
                 Bitmap.Config.ARGB_8888);

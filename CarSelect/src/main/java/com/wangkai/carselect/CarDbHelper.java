@@ -33,9 +33,6 @@ public class CarDbHelper extends OrmLiteSqliteOpenHelper {
 
     }
 
-    public Dao<CarBrand, Integer> getCarBrandDao() {
-
-    }
 
 
 }
