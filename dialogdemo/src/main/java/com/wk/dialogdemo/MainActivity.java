@@ -2,19 +2,22 @@ package com.wk.dialogdemo;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mAlertBtn, mFrgBtn;
+    private Button mAlertBtn, mFrgBtn, mCustomBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mAlertBtn = (Button) findViewById(R.id.btn_alert_dialog);
+        mCustomBtn = (Button) findViewById(R.id.btn_custom_dialog);
         mAlertBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,17 +28,29 @@ public class MainActivity extends AppCompatActivity {
         mFrgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                Fragment pre = getSupportFragmentManager().findFragmentByTag("dialog");
+                if (null != pre) {
+                    transaction.remove(pre);
+                }
+                transaction.addToBackStack(null);
+                transaction.commit();
                 MyFragmentDialog dialog = new MyFragmentDialog();
-                dialog.show(getSupportFragmentManager(), "AA");
+                dialog.show(getSupportFragmentManager(), "dialog");
             }
         });
-        ViewPager viewPager = new ViewPager(this);
+        mCustomBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCustomDialog();
+            }
+        });
     }
 
     private void  showAldetDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("aaaaa");
-        builder.setIcon(R.mipmap.ic_launcher);
+//        builder.setTitle("aaaaa");
+//        builder.setIcon(R.mipmap.ic_launcher);
         builder.setNegativeButton("设为头像" ,null);
         builder.setPositiveButton("Positive", null);
         builder.setNeutralButton("Neutral", null);
@@ -43,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
+
+    }
+
+    private void showCustomDialog() {
+        CustomDialogFragment fragment = new CustomDialogFragment();
+        fragment.show(getSupportFragmentManager(), "CustomDialogFragment");
 
     }
 
