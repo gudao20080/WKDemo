@@ -9,61 +9,54 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.PopupWindow;
+import android.widget.Toast;
+
+import com.wangkai.test.view.MyGridView;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
     private final String TAG = "MainActivity";
-    private android.os.Handler mHandler;
+    private MyGridView mGridView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mHandler = new android.os.Handler();
-//        ColorMatrix colorMatrix = new ColorMatrix();
-//        colorMatrix.setRotate(0, 1);
-//        colorMatrix.setSaturation(100);
-//
-//        Paint paint = new Paint();
-//        paint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));
-//
-//        Matrix matrix = new Matrix();
-//        matrix.setRotate(30);
-//        matrix.setTranslate(10, 200);
-//        matrix.setScale(2,2);
-//        matrix.setSkew(10, 10);
-        PopupWindow
-
-        findViewById(R.id.btn_a).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.tv_desc).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, BActivity.class);
-//                startActivityForResult(intent, 100);
-//                mHandler.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        finishActivity(100);
-//                    }
-//                }, 2000);
-                startActivity(intent);
+                Toast.makeText(MainActivity.this, "heheeheh", Toast.LENGTH_SHORT).show();
             }
         });
 
-        findViewById(R.id.btn_b).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mGridView = (MyGridView) findViewById(R.id.gridView);
 
+        SelectMarkAdapter adapter = new SelectMarkAdapter(this, getDatas(), null);
+        mGridView.setAdapter(adapter);
+        mGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                view.findViewById(R.id.tv_desc).setSelected(true);
             }
         });
-        Toolbar toolbar = new Toolbar(this);
-        ViewPager viewPager = new ViewPager(this);
-        viewPager.getGlobalVisibleRect(new Rect());
-        View v = new View(this);
-        ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
-        int memoryClass = activityManager.getMemoryClass();
-        Log.d("TAG", "memoryClass: " + memoryClass);
+
     }
 
+    private List<String> getDatas() {
+        List<String> datas = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            int r = new Random().nextInt(15) + 1;
+            datas.add("富二代的爷dddddddddddddddads".substring(0, r));
+        }
+
+        return datas;
+    }
 
 
 }
