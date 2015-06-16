@@ -48,14 +48,11 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             if (photoFile != null) {
-                boolean exists = photoFile.exists();
                 Uri uri = Uri.fromFile(photoFile);
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
                 startActivityForResult(intent, REQUEST_TAKE_PHOTO);
 
             }
-
-
         }
 
 
@@ -78,16 +75,19 @@ public class MainActivity extends AppCompatActivity {
         // Create an image file name
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = "JPEG_" + timeStamp + "_";
-        File storageDir = Environment.getExternalStoragePublicDirectory(
-            Environment.DIRECTORY_PICTURES);
+        File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(
             imageFileName,  /* prefix */
             ".jpg",         /* suffix */
             storageDir      /* directory */
         );
+        if(!image.exists()){
+            image.mkdirs();
+        }
 
         // Save a file: path for use with ACTION_VIEW intents
-        mCurrentPhotoPath = "file:" + image.getAbsolutePath();
+//        mCurrentPhotoPath = "file:" + image.getAbsolutePath();
+        mCurrentPhotoPath = image.getAbsolutePath();
         return image;
     }
 
