@@ -3,51 +3,28 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CarSelect/CarSelect.iml" filepath="$PROJECT_DIR$/CarSelect/CarSelect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CarSelect/CarSelect.iml" filepath="$PROJECT_DIR$/CarSelect/CarSelect.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" filepath="$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" filepath="$PROJECT_DIR$/CostomCountDown/CostomCountDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CustomViewT/CustomViewT.iml" filepath="$PROJECT_DIR$/CustomViewT/CustomViewT.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" filepath="$PROJECT_DIR$/ListViewPropertyTest/ListViewPropertyTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" filepath="$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" filepath="$PROJECT_DIR$/OrmliteTest/OrmliteTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/WKDemo.iml" filepath="$PROJECT_DIR$/WKDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
-      <module fileurl="file://$PROJECT_DIR$/async/async.iml" filepath="$PROJECT_DIR$/async/async.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bitmaptest/bitmaptest.iml" filepath="$PROJECT_DIR$/bitmaptest/bitmaptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitmaptest/bitmaptest.iml" filepath="$PROJECT_DIR$/bitmaptest/bitmaptest.iml" />
       <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bombdemo/bombdemo.iml" filepath="$PROJECT_DIR$/bombdemo/bombdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/camerademo/camerademo.iml" filepath="$PROJECT_DIR$/camerademo/camerademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/camerademo/camerademo.iml" filepath="$PROJECT_DIR$/camerademo/camerademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonutils/commonUtils.iml" filepath="$PROJECT_DIR$/commonutils/commonUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/dialogdemo/dialogdemo.iml" filepath="$PROJECT_DIR$/dialogdemo/dialogdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dialogdemo/dialogdemo.iml" filepath="$PROJECT_DIR$/dialogdemo/dialogdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/drawerlayoutdemo/drawerlayoutdemo.iml" filepath="$PROJECT_DIR$/drawerlayoutdemo/drawerlayoutdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/drawerlayoutdemo/drawerlayoutdemo.iml" filepath="$PROJECT_DIR$/drawerlayoutdemo/drawerlayoutdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/frescodeom/frescodeom.iml" filepath="$PROJECT_DIR$/frescodeom/frescodeom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendaodemo/greendaodemo.iml" filepath="$PROJECT_DIR$/greendaodemo/greendaodemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageopent/imageopent.iml" filepath="$PROJECT_DIR$/imageopent/imageopent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imageopent/imageopent.iml" filepath="$PROJECT_DIR$/imageopent/imageopent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/materialnewfeaturedemo/materialnewfeaturedemo.iml" filepath="$PROJECT_DIR$/materialnewfeaturedemo/materialnewfeaturedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialnewfeaturedemo/materialnewfeaturedemo.iml" filepath="$PROJECT_DIR$/materialnewfeaturedemo/materialnewfeaturedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" filepath="$PROJECT_DIR$/multipackagedemo/multipackagedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" filepath="$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" filepath="$PROJECT_DIR$/pagertabstriptest/pagertabstriptest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/photosdemo/photosdemo.iml" filepath="$PROJECT_DIR$/photosdemo/photosdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" filepath="$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" filepath="$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" filepath="$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" filepath="$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" filepath="$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" filepath="$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" />
     </modules>
   </component>
