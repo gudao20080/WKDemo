@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 
 public class DrawableActivity extends ActionBarActivity {
@@ -23,7 +24,7 @@ public class DrawableActivity extends ActionBarActivity {
         });
     }
 
-    /*Í¼Æ¬½¥±ä¸ü»»*/
+    /*å›¾ç‰‡æ¸å˜æ›´æ¢*/
     public void showDrawableTransition() {
 
         TransitionDrawable transitionDrawable = (TransitionDrawable) getResources().getDrawable(R.drawable.expand_collapse);
