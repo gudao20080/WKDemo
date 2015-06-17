@@ -2,17 +2,11 @@ package com.wk.dialogdemo;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.webkit.WebHistoryItem;
-import android.widget.Toast;
 
 /**
  * User: WangKai(123940232@qq.com)
@@ -59,6 +53,27 @@ public class MyFragmentDialog extends DialogFragment {
         builder.setView(view);
 //        builder.setSingleChoiceItems(mColorItems, 3, null);
         AlertDialog alertDialog = builder.create();
+
+        int style = android.app.DialogFragment.STYLE_NORMAL, theme = 0;
+        int mNum = 10;
+        switch ((mNum-1)%6) {
+            case 1: style = android.app.DialogFragment.STYLE_NO_TITLE; break;
+            case 2: style = android.app.DialogFragment.STYLE_NO_FRAME; break;
+            case 3: style = android.app.DialogFragment.STYLE_NO_INPUT; break;
+            case 4: style = android.app.DialogFragment.STYLE_NORMAL; break;
+            case 5: style = android.app.DialogFragment.STYLE_NORMAL; break;
+            case 6: style = android.app.DialogFragment.STYLE_NO_TITLE; break;
+            case 7: style = android.app.DialogFragment.STYLE_NO_FRAME; break;
+            case 8: style = android.app.DialogFragment.STYLE_NORMAL; break;
+        }
+        switch ((mNum-1)%6) {
+            case 4: theme = android.R.style.Theme_Holo; break;
+            case 5: theme = android.R.style.Theme_Holo_Light_Dialog; break;
+            case 6: theme = android.R.style.Theme_Holo_Light; break;
+            case 7: theme = android.R.style.Theme_Holo_Light_Panel; break;
+            case 8: theme = android.R.style.Theme_Holo_Light; break;
+        }
+        setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Holo_Light);
 
         return alertDialog;
     }
