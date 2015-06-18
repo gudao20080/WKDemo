@@ -11,6 +11,7 @@
     android:showDividers="middle"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/btn_show_snack_bar"
         android:layout_width="wrap_content"
@@ -47,6 +48,7 @@
         android:layout_height="wrap_content"
         android:src="@mipmap/t"
         app:fabSize="mini"
+        android:backgroundTint="@color/tab_text_selector"
         />
 
 

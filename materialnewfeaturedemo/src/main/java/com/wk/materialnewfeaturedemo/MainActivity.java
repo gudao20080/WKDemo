@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.SpannableString;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
@@ -27,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBar ab = getSupportActionBar();           //设置Actionbar左边的图标
+        ab.setHomeAsUpIndicator(R.drawable.ic_menu);
+        ab.setDisplayHomeAsUpEnabled(true);
+        ab.setBackgroundDrawable(getResources().getDrawable(R.mipmap.ic_launcher));
+
         mLyaout = (LinearLayout) findViewById(R.id.cl);
         mTextInputLayout = (TextInputLayout) findViewById(R.id.til);
         mShowSnackBarBtn = (Button) findViewById(R.id.btn_show_snack_bar);
@@ -63,11 +71,21 @@ public class MainActivity extends AppCompatActivity {
 //                    }).show();
                 View contentView = findViewById(android.R.id.content);
 
-                Snackbar snackbar = Snackbar.make(contentView, "Demo", Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(mTabLayout, "Demo", Snackbar.LENGTH_LONG);
                 Snackbar.SnackbarLayout snackbarView = (Snackbar.SnackbarLayout) snackbar.getView();
                 snackbarView.setBackgroundColor(Color.RED);
 //                snackbarView.getActionView()
                 Class<? extends Snackbar.SnackbarLayout> snackbarViewClass = snackbarView.getClass();
+                snackbar.setAction("点击按钮", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(MainActivity.this, "按钮被点击了", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+                snackbar.setActionTextColor(Color.GREEN);
+
+
 
                 snackbar.show();
             }
@@ -114,6 +132,19 @@ public class MainActivity extends AppCompatActivity {
     public void initFloatActionButton() {
         mFab.setRippleColor(Color.RED);         //设置FloatActionButton底部颜色
         mFab_b.setRippleColor(Color.BLUE);
+//        mFab.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Fab is Clicked!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        mFab_b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Fab is Clicked!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 
