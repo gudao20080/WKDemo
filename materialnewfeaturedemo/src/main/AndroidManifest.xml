@@ -20,6 +20,10 @@
             android:name=".TabLayoutActivity"
             android:label="@string/title_activity_tab_layout" >
         </activity>
+        <activity
+            android:name=".DataBinderActivity"
+            android:label="@string/title_activity_data_binder" >
+        </activity>
     </application>
 
 </manifest>

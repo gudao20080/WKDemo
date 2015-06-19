@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.view.View;
+import android.view.Window;
 
 /**
  * User: WangKai(123940232@qq.com)
@@ -74,6 +75,8 @@ public class MyFragmentDialog extends DialogFragment {
             case 8: theme = android.R.style.Theme_Holo_Light; break;
         }
         setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Holo_Light);
+        Window window = alertDialog.getWindow();
+        window.setWindowAnimations(R.style.dialogAnim);
 
         return alertDialog;
     }
