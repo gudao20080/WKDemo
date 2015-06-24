@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
-    private Button mShowSnackBarBtn, mTabLayout;
+    private Button mShowSnackBarBtn, mTabLayout, mAppbarLayout;
     private LinearLayout mLyaout;
     private TextInputLayout mTextInputLayout;
     private FloatingActionButton mFab, mFab_b;
@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ActionBar ab = getSupportActionBar();           //设置Actionbar左边的图标
         ab.setHomeAsUpIndicator(R.drawable.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
@@ -38,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         mLyaout = (LinearLayout) findViewById(R.id.cl);
         mTextInputLayout = (TextInputLayout) findViewById(R.id.til);
         mShowSnackBarBtn = (Button) findViewById(R.id.btn_show_snack_bar);
+        mAppbarLayout = (Button) findViewById(R.id.btn_appBarLayout);
         mFab = (FloatingActionButton) findViewById(R.id.fab);
         mFab_b = (FloatingActionButton) findViewById(R.id.fab_b);
         mTabLayout = (Button) findViewById(R.id.btn_tabLayout);
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         initTextInputLayout();
         initFloatActionButton();
         initTabLayout();
+        initAppBarLayout();
 
     }
 
@@ -145,6 +146,18 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Fab is Clicked!", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public void initAppBarLayout() {
+
+        mAppbarLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AppBarActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

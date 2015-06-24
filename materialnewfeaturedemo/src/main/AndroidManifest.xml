@@ -24,6 +24,11 @@
             android:name=".DataBinderActivity"
             android:label="@string/title_activity_data_binder" >
         </activity>
+        <activity
+            android:name=".AppBarActivity"
+            android:theme="@style/AppBaseTheme"
+            android:label="@string/title_activity_app_bar" >
+        </activity>
     </application>
 
 </manifest>
