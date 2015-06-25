@@ -24,7 +24,6 @@
       <module fileurl="file://$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" filepath="$PROJECT_DIR$/propertyanimationdemo/propertyanimationdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" filepath="$PROJECT_DIR$/recyclerviewdemo/recyclerviewdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" filepath="$PROJECT_DIR$/toucheventdemo/toucheventdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" filepath="$PROJECT_DIR$/vvpinchedemo/vvpinchedemo.iml" />
     </modules>
   </component>
