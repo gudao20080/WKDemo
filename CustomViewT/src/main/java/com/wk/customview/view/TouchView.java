@@ -8,6 +8,7 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.LinearLayout;
 
 /**
@@ -47,14 +48,20 @@ public class TouchView extends LinearLayout {
 
         canvas.drawText("TouchView", 0, h, mTextPaint);
 //        canvas.drawLine(0, 0, 300, 300, mPaint);
-
     }
 
-//    @Override
-//    protected void onLayout(boolean changed, int l, int t, int r, int b) {
-//        super.onLayout(changed, l, t, r, b);
-//
-//    }
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        super.onLayout(changed, l, t, r, b);
+
+        int count = getChildCount();
+        for (int i = 0; i < count; i++) {
+            View child = getChildAt(i);
+            LinearLayout.LayoutParams params = (LayoutParams) child.getLayoutParams();
+
+        }
+
+    }
 
 
     @Override

@@ -3,6 +3,7 @@ package com.wk.customview;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 
 import butterknife.OnClick;
 
@@ -13,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_swiprefresh);
         butterknife.ButterKnife.inject(this);
-
-
+        ListView listView = new ListView(this);
 
 
     }
