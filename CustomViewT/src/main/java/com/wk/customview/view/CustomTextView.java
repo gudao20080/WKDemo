@@ -61,8 +61,8 @@ public class CustomTextView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawRect(mBounds, mPaint);
-
+//        canvas.drawRect(mBounds, mPaint);
+        canvas.drawRect(0, 0, mBounds.width(), mBounds.height(), mPaint);
 
     }
 }

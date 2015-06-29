@@ -8,6 +8,10 @@
     <com.wk.customview.view.CustomTextView
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:textAlignment="center"
+        app:textColor="#0000ff"
+        app:text="hello, world!"
+        app:textSize="30sp"
 
         />
 
