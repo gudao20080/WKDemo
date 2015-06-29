@@ -24,6 +24,10 @@
             android:name=".TouchViewActivity"
             android:label="@string/title_activity_touch_view" >
         </activity>
+        <activity
+            android:name=".CustomTextActivity"
+            android:label="@string/title_activity_custom_text" >
+        </activity>
     </application>
 
 </manifest>
