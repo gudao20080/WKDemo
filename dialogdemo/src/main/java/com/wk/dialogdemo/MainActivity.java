@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
-    private Button mAlertBtn, mFrgBtn, mCustomBtn, mProgressBtn;
+    private Button mAlertBtn, mFrgBtn, mCustomBtn, mProgressBtn, mDataPickerBtn;
     private Handler mHandler;
     private static int DIALOG_PROGRESS = 110;
 
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         });
         mFrgBtn = (Button) findViewById(R.id.btn_fragment_dialog);
         mProgressBtn = (Button) findViewById(R.id.btn_progress_dialog);
+        mDataPickerBtn = (Button) findViewById(R.id.btn_DatePicker_dialog);
         mFrgBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +79,17 @@ public class MainActivity extends AppCompatActivity {
                 showProgressDialog();
             }
         });
+        mDataPickerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDatePickerDialog();
+            }
+        });
+    }
+
+    private void showDatePickerDialog() {
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
     }
 
     private void  showAldetDialog() {
